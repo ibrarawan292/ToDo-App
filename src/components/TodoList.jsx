@@ -18,9 +18,7 @@ const ToDoList = (props) => {
                                <Link to= {`/detail/${todo.title}`}><h1>{todo.title}</h1></Link>
                                <span className={`badge bg-${todo.status === 'completed' ? 'success' : 'danger'}`}>{todo.status}</span>
                                </div>
-                               <div className="right-col">
-                                   <button className="btn btn-primary">Delete</button>
-                               </div>
+                              
                            </div>
 
                         </div>
