@@ -10,17 +10,15 @@ const Home = () => {
 
     const [todoTitle, setToDoTitle] = useState ('')
     const [todoDescription, setToDescrtiption] = useState('')
+    const [author, setAuthor] = useState("")
+    const [status, setStatus] = useState("")
+
   
    
   
-    const handleTitle = (e)=>{
-        setToDoTitle(e.target.value);
-        
-    }
+    const handleTitle = (e)=>{ setToDoTitle(e.target.value);  }
   
-    const handleDescrtiption = (e)=>{
-        setToDescrtiption(e.target.value);
-    }
+    const handleDescrtiption = (e)=>{ setToDescrtiption(e.target.value);}
   
     const [listItems, setListItems] = useState(todos)
    
@@ -29,7 +27,9 @@ const Home = () => {
         e.preventDefault();
         const newItem = {
             title: todoTitle,
-            description: todoDescription
+            description: todoDescription,
+            author: author,
+            status: status
         }
      
         setListItems([...listItems, newItem])

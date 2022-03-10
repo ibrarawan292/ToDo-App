@@ -24,7 +24,8 @@ function App() {
         <Route path='/detail/:title/' element={<Detail/>}/>
       </Routes>
     </Router>
-
+        
+       
 
       {/* <Posts/> */}
     </div>
